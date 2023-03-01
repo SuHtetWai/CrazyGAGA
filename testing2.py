@@ -1,0 +1,13 @@
+from tkinter import *
+root = Tk()
+root.geometry("300x400")
+root.minsize(200,300)
+root.maxsize(1500,1500)
+root.configure(background='black')
+buttom_frame = Frame(root)
+back_but = Button(buttom_frame,text='Back',font=('Arial',10),height=1,width=3,fg='black',compound=LEFT)
+back_but.pack(side=LEFT)
+next_but = Button(buttom_frame,text='next',font=('Arial',10),height=1,width=3,fg='black',compound=RIGHT)
+next_but.pack(side=RIGHT)
+buttom_frame.pack(side=BOTTOM,pady=30)
+root.mainloop()
